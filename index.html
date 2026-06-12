@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anurag Adhikari — Websites for Local Businesses · Sodepur & North Kolkata</title>
+<meta name="description" content="Modern, mobile-first websites for schools, clinics, restaurants and shops in Sodepur, Panihati, Khardah, Agarpara & North Kolkata. Live in 48 hours from ₹4,999.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f172a;--mut:#475569;--bg:#f8fafc;--card:#ffffff;--brand:#4f46e5;--brand2:#06b6d4;--ok:#059669;--line:#e2e8f0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+h1,h2,h3{font-family:'Sora',sans-serif;line-height:1.2}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(248,250,252,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Sora',sans-serif;font-weight:800;font-size:1.1rem}
+.logo span{color:var(--brand)}
+.nav a.cta{background:var(--brand);color:#fff;padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.9rem}
+.hero{padding:72px 0 56px;background:radial-gradient(1200px 500px at 80% -10%,#e0e7ff 0%,transparent 60%),radial-gradient(900px 400px at 10% 110%,#cffafe 0%,transparent 55%)}
+.hero .tag{display:inline-block;background:#eef2ff;color:var(--brand);font-weight:600;font-size:.8rem;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(1.9rem,4.5vw,3.1rem);max-width:780px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{margin:18px 0 28px;color:var(--mut);max-width:640px;font-size:1.05rem}
+.btnrow{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:13px 24px;border-radius:12px;text-decoration:none;font-weight:600}
+.btn.primary{background:var(--ink);color:#fff}
+.btn.ghost{border:1.5px solid var(--line);color:var(--ink);background:#fff}
+section{padding:56px 0}
+.sec-h{font-size:1.6rem;margin-bottom:8px}
+.sec-p{color:var(--mut);margin-bottom:32px;max-width:620px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{font-size:1.05rem;margin-bottom:8px}
+.card p{color:var(--mut);font-size:.92rem}
+.price{font-family:'Sora',sans-serif;font-weight:800;font-size:1.7rem;margin:10px 0 2px}
+.price small{font-size:.85rem;color:var(--mut);font-weight:400}
+.plan ul{list-style:none;margin:14px 0}
+.plan li{padding:5px 0 5px 26px;position:relative;font-size:.92rem;color:var(--mut)}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:700}
+.plan.hot{border:2px solid var(--brand);position:relative}
+.plan.hot::after{content:"MOST POPULAR";position:absolute;top:-11px;right:16px;background:var(--brand);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:.06em;padding:3px 10px;border-radius:999px}
+.demo{display:block;text-decoration:none;color:inherit;transition:transform .15s}
+.demo:hover{transform:translateY(-3px)}
+.demo .thumb{height:140px;border-radius:12px;margin-bottom:14px;display:flex;align-items:flex-end;padding:14px;color:#fff;font-weight:700;font-family:'Sora',sans-serif}
+.t1{background:linear-gradient(135deg,#0ea5e9,#0f766e)}
+.t2{background:linear-gradient(135deg,#16a34a,#166534)}
+.t3{background:linear-gradient(135deg,#7c3aed,#4338ca)}
+.t4{background:linear-gradient(135deg,#dc2626,#9f1239)}
+.steps{counter-reset:s}
+.step{display:flex;gap:16px;margin-bottom:18px;align-items:flex-start}
+.step .n{counter-increment:s;background:var(--ink);color:#fff;border-radius:10px;min-width:38px;height:38px;display:flex;align-items:center;justify-content:center;font-family:'Sora',sans-serif;font-weight:700}
+.step .n::before{content:counter(s)}
+.faq .card{margin-bottom:12px}
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--mut);font-size:.88rem}
+.contactbox{background:linear-gradient(135deg,#1e1b4b,#0f172a);color:#fff;border-radius:20px;padding:40px;text-align:center}
+.contactbox h2{font-size:1.7rem;margin-bottom:10px}
+.contactbox p{color:#c7d2fe;margin-bottom:22px}
+.contactbox a.mail{background:#fff;color:var(--ink);padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:700;display:inline-block}
+@media(max-width:640px){.hero{padding:48px 0 40px}section{padding:40px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <div class="logo">Anurag<span>.</span>Webworks</div>
+  <a class="cta" href="mailto:anuragprivate2002@gmail.com?subject=Website%20enquiry">Get a website</a>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <span class="tag">Sodepur · Panihati · Khardah · Agarpara · North Kolkata</span>
+  <h1>Your business deserves a website <em>customers can actually find.</em></h1>
+  <p>I'm Anurag — a product designer from North 24 Parganas. I build fast, mobile-first websites for local schools, clinics, restaurants and shops. Live in 48 hours, no agency drama, no hidden costs.</p>
+  <div class="btnrow">
+    <a class="btn primary" href="#pricing">See pricing</a>
+    <a class="btn ghost" href="#work">View live demos</a>
+  </div>
+</div></div>
+
+<section id="why"><div class="wrap">
+  <h2 class="sec-h">Why local businesses work with me</h2>
+  <p class="sec-p">90% of your customers search Google before they visit. If you're not there — they find your competitor.</p>
+  <div class="grid">
+    <div class="card"><h3>⚡ Live in 48 hours</h3><p>From our first conversation to a live website in two days. I work fast because the design system is already battle-tested.</p></div>
+    <div class="card"><h3>📱 Mobile-first</h3><p>Your customers are on their phones. Every site is built for small screens first, with tap-to-call and WhatsApp buttons.</p></div>
+    <div class="card"><h3>🗺️ Found on Google</h3><p>Proper page titles, local keywords, Google Maps embed and Business Profile guidance — so "near me" searches find you.</p></div>
+    <div class="card"><h3>🔧 Zero maintenance</h3><p>Hosting included free. No monthly fees unless you want changes. You own everything.</p></div>
+  </div>
+</div></section>
+
+<section id="work" style="background:#fff;border-block:1px solid var(--line)"><div class="wrap">
+  <h2 class="sec-h">Recent demo work</h2>
+  <p class="sec-p">Real design previews built for businesses in our area — every one of these is a live, working site. Yours can look this good by the weekend.</p>
+  <div class="grid">
+    <a class="demo card" href="demo/smile-line/"><div class="thumb t1">🦷 Dental clinic</div><h3>Smile Line Dental — Agarpara</h3><p>Appointment-focused clinic site with services, doctor profile & tap-to-call.</p></a>
+    <a class="demo card" href="demo/nature-canvas/"><div class="thumb t2">🏔️ Travel agency</div><h3>Nature Canvas Travel — Sodepur</h3><p>Tour packages, enquiry form and WhatsApp booking for a local travel planner.</p></a>
+    <a class="demo card" href="demo/national-model-school/"><div class="thumb t3">🎓 School</div><h3>National Model School — Sodepur</h3><p>Admissions-first school site with notices, facilities and contact for parents.</p></a>
+    <a class="demo card" href="demo/thyrocare-sodepur/"><div class="thumb t4">🩸 Diagnostics</div><h3>Thyrocare Collection Centre</h3><p>Home sample collection landing page with test menu and booking CTA.</p></a>
+  </div>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <h2 class="sec-h">Simple, honest pricing</h2>
+  <p class="sec-p">Fixed prices. 50% to start, 50% when you're happy and the site is live. UPI accepted.</p>
+  <div class="grid">
+    <div class="card plan"><h3>Starter</h3><div class="price">₹4,999</div><small>one-time</small>
+      <ul><li>One-page modern website</li><li>Mobile-first design</li><li>WhatsApp & tap-to-call buttons</li><li>Google Maps embed</li><li>Free hosting (worth ₹3,000/yr)</li><li>Live in 48 hours</li></ul></div>
+    <div class="card plan hot"><h3>Business</h3><div class="price">₹8,999</div><small>one-time</small>
+      <ul><li>Up to 5 pages</li><li>Everything in Starter</li><li>Google Business Profile setup</li><li>Basic SEO for local search</li><li>Photo gallery & enquiry form</li><li>Live in 3–4 days</li></ul></div>
+    <div class="card plan"><h3>Automation add-on</h3><div class="price">₹2,999</div><small>one-time</small>
+      <ul><li>Booking / enquiry form</li><li>Instant email alerts to you</li><li>WhatsApp notification flow</li><li>Google Sheet of every lead</li></ul></div>
+  </div>
+</div></section>
+
+<section id="how" style="background:#fff;border-block:1px solid var(--line)"><div class="wrap">
+  <h2 class="sec-h">How it works</h2>
+  <div class="steps" style="margin-top:24px">
+    <div class="step"><div class="n"></div><div><strong>Reply to my email (or write to me).</strong><br><span style="color:var(--mut)">Tell me about your business. I'll send a free design preview — no commitment.</span></div></div>
+    <div class="step"><div class="n"></div><div><strong>Approve the design, pay 50% via UPI.</strong><br><span style="color:var(--mut)">I polish everything — your photos, your text, your colours.</span></div></div>
+    <div class="step"><div class="n"></div><div><strong>Site goes live in 48 hours. Pay the rest only if you're happy.</strong><br><span style="color:var(--mut)">You get the links, the files, and a one-page guide to updating it.</span></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="contactbox">
+    <h2>Want one for your business?</h2>
+    <p>Email me what you do and where you are — I'll reply within a few hours with a free design preview.</p>
+    <a class="mail" href="mailto:anuragprivate2002@gmail.com?subject=Website%20for%20my%20business">anuragprivate2002@gmail.com</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <strong>Anurag Adhikari</strong> · UI/UX & Product Designer · Sodepur, North 24 Parganas, West Bengal<br>
+  Demo sites shown above are design previews prepared for the named businesses and are not their official websites.
+</div></footer>
+</body>
+</html>
